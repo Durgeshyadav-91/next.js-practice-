@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
+import "./index.css"
 
 export default function Home() {
   const router = useRouter();
@@ -10,8 +11,8 @@ export default function Home() {
   }
   
   return (
-    <div>
-        <h1 className="items-center">Hello home Page</h1>
+    <div className="">
+        <h1 className="items-center text-red-500">Hello home Page</h1>
         <Link href={"/about"}>GO To About Page</Link><br/>
         <Link href={"/login"}>GO To Login page</Link><br/>
         <Link href={"/login/teacherlogin"}>Go to Teacher Login page</Link><br/><br/>
